@@ -1,3 +1,11 @@
+Search icon by Icons8
+Home icon by Icons8
+Favorite icon by Icons8
+Instagram Reels icon by Icons8
+Add New icon by Icons8
+messenger icon by Icons8
+Compass icon by Icons8
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
