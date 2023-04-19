@@ -1,19 +1,73 @@
 .stories-container {
   display: flex;
-  justify-content: center;
   align-items: center;
   border: 2px solid red;
-  width: 100%;
-  height: 12vw;
+  width: 98%;
+  padding: 15px;
+  padding-bottom: 0;
+  justify-content: space-evenly;
+  max-width: 78vw;
+  height: 130px;
+  margin-right:0;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  flex-flow: column wrap;
+  overflow-x: scroll;
   gap: 20px;
+  
+}
+.story-container-gradient {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background: linear-gradient(to right, yellow, red, purple, pink);
+  padding: 3px;
+}
+
+.stories-container::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+.story-container {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-names {
+  margin: 5px;
 }
 
 .profile-photos {
   border-radius: 50%;
+  width:60px;
+  height:auto;
+  border: 2px solid white;
 }
 
-.stories-container{
-  padding: 30px;
+.stories-parent-container {
+  position: relative;
 }
+
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  border: 2px solid rgb(229, 229, 229);
+  background-color: white;
+  font-size: 12px;
+  font-weight:bold;
+}
+
+.left-btn {
+  left: 0;
+}
+.right-btn {
+  right: 0;
+}
+
 
 
