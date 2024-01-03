@@ -6,47 +6,47 @@ const Stories = () => {
   const storiesProfiles = [
     {
       "name": "cat1",
-      "photo": "./profile-photos/pexels-наталья-семенкова-991831.jpg",
+      "photo": "/images/profile-photos/cat-looking-at-toy.jpg",
     },
     {
       "name": "cat2",
-      "photo": "./profile-photos/pexels-tatiana-аzatskaya-3616232.jpg",
+      "photo": "/images/profile-photos/cat-running.jpg",
     },
     {
       "name": "cat3",
-      "photo": "./profile-photos/pexels-leonardo-de-oliveira-1770918.jpg",
+      "photo": "/images/profile-photos/cat-sitting-down.jpg",
     },
     {
       "name": "cat4",
-      "photo": "./profile-photos/pexels-inge-wallumrød-177809.jpg",
+      "photo": "/images/profile-photos/cat-wrapped-in-blanket.jpg",
     },
     {
       "name": "cat5",
-      "photo": "./profile-photos/pexels-evg-kowalievska-1416803.jpg",
+      "photo": "/images/profile-photos/gray-cat-laying-down.jpg",
     },
     {
       "name": "cat6",
-      "photo": "./profile-photos/pexels-evg-kowalievska-1416803.jpg",
+      "photo": "/images/profile-photos/gray-cat-laying-down.jpg",
     },
     {
       "name": "cat7",
-      "photo": "./profile-photos/pexels-evg-kowalievska-1416803.jpg",
+      "photo": "/images/profile-photos/gray-cat-laying-down.jpg",
     },
     {
       "name": "cat8",
-      "photo": "./profile-photos/pexels-evg-kowalievska-1416803.jpg",
+      "photo": "/images/profile-photos/gray-cat-laying-down.jpg",
     },
     {
       "name": "cat1",
-      "photo": "./profile-photos/pexels-наталья-семенкова-991831.jpg",
+      "photo": "/images/profile-photos/sphynx-cat.jpg",
     },
     {
       "name": "cat2",
-      "photo": "./profile-photos/pexels-tatiana-аzatskaya-3616232.jpg",
+      "photo": "/images/profile-photos/sphynx-cat.jpg",
     },
     {
       "name": "cat3",
-      "photo": "./profile-photos/pexels-leonardo-de-oliveira-1770918.jpg",
+      "photo": "/images/profile-photos/sphynx-cat.jpg",
     }
   ]
 
@@ -68,7 +68,8 @@ const Stories = () => {
         {storiesProfiles.map((profile) => (
           <div className="story-container-gradient">
             <div className="story-container">
-              <img className="profile-photos" src={require(`${profile.photo}`)} />
+              <img className="profile-photos" src={profile.photo} />
+              
               <p className="profile-names">{profile.name}</p>
             </div>
           </div>

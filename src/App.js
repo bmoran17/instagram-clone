@@ -7,6 +7,7 @@ function App() {
   return (
     <div className="content">
       <Sidebar />
+      <hr className="vertical" />
       <Page/>
     </div>
   );

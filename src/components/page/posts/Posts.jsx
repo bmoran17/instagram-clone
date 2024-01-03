@@ -4,42 +4,47 @@ import "./posts.css";
 const Posts = () => {
   const postsInfo = [
     {
-      "name":"cat01",
+      "name":"cat_01",
+      "profilePhoto":"/images/profile-photos/cat-looking-at-toy.jpg",
       "likes": 45,
       "caption": "cat01",
-      "imagePosted": "./post's-profiles/pexels-peng-louis-1643457.jpg",
+      "photoPosted": "/images/posted-photos/cat-with-closed-eyes.jpg",
       "comments": [],
       "timePosted": "24m"
     },
     {
-      "name":"cat02",
+      "name":"cat_02",
+      "profilePhoto":"/images/profile-photos/cat-running.jpg",
       "likes": 164,
       "caption": "cat02",
-      "imagePosted": "./post's-profiles/pexels-tranmautritam-2194261.jpg",
+      "photoPosted": "/images/posted-photos/cat-with-flower-collar.jpg",
       "comments": [],
       "timePosted": "1h"
     },
     {
-      "name":"cat03",
+      "name":"cat_03",
+      "profilePhoto":"/images/profile-photos/cat-sitting-down.jpg",
       "likes": 3,
       "caption": "cat03",
-      "imagePosted": "./post's-profiles/pexels-peng-louis-1643457.jpg",
+      "photoPosted": "/images/posted-photos/kitten-smelling-flower.jpg",
       "comments": [],
       "timePosted": "2h"
     },
     {
-      "name":"cat04",
+      "name":"cat_04",
+      "profilePhoto":"/images/profile-photos/cat-wrapped-in-blanket.jpg",
       "likes": 796,
       "caption": "cat04",
-      "imagePosted": "./post's-profiles/pexels-dids-2127433.jpg",
+      "photoPosted": "/images/posted-photos/pink-blue-eyed-cat.jpg",
       "comments": [],
       "timePosted": "3d"
     },
     {
-      "name":"",
+      "name":"cat_05",
+      "profilePhoto":"/images/profile-photos/gray-cat-laying-down.jpg",
       "likes": 40,
       "caption": "cat05",
-      "imagePosted": "./post's-profiles/pexels-alex-bargain-1472999.jpg",
+      "photoPosted":"/images/posted-photos/seated-cat.jpg",
       "comments": [],
       "timePosted": "1w"
     }
@@ -50,10 +55,11 @@ const Posts = () => {
       {postsInfo.map((post) => (
       <div className="ind-post-container">
         <div className="post-header">
-          <img className="post-profile-photo" />
-          <p className="post-profile-name">{post.name} - {post.timePosted}</p>
+          <img className="post-profile-photo" src={post.profilePhoto} />
+          <p className="post-profile-name">{post.name} •</p>
+          <p className="post-time-posted">{post.timePosted}</p>
         </div>
-        <img className="posted-image" src={require(`${post.imagePosted}`)}/>
+        <img className="posted-image" src={post.photoPosted}/>
         <div className="bottom-post-info">
 
         </div>
@@ -64,4 +70,4 @@ const Posts = () => {
   )
 }
 
-export default Posts;
+export default Posts; 

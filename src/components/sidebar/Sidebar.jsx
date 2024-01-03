@@ -6,35 +6,35 @@ const Sidebar = () => {
   const sidebarItems = [ 
     {
       "name": "Home",
-      "src": "./icons/icons8-home-24.png"
+      "src": "/images/icons/home-icon.png"
     },
     {
       "name": "Search",
-      "src": "./icons/icons8-search-24.png"
+      "src": "/images/icons/search-icon.png"
     },
     {
       "name": "Explore",
-      "src": "./icons/icons8-compass-24.png"
+      "src": "/images/icons/compass-icon.png"
     },
     {
       "name": "Reels",
-      "src": "./icons/icons8-instagram-reels-24.png"
+      "src": "/images/icons/reels-icon.png"
     },
     {
       "name": "Messages",
-      "src": "./icons/icons8-messenger-24.png"
+      "src": "/images/icons/messages-icon.png"
     },
     {
       "name": "Notifications",
-      "src": "./icons/icons8-favorite-24.png"
+      "src": "/images/icons/heart-icon.png"
     },
     {
       "name": "Create",
-      "src": "./icons/icons8-add-new-24.png"
+      "src": "/images/icons/add-new-icon.png"
     },
     {
       "name": "Profile",
-      "src": "./icons/pexels-pixabay-45201.jpg"
+      "src": "/images/icons/user-profile-photo.jpg"
     },
   ]
   return (
@@ -43,7 +43,7 @@ const Sidebar = () => {
 
       {sidebarItems.map((item) => (
         <div className="sidebar-item"> 
-          <img className="icon-image" src={require(`${item.src}`)} />
+          <img className="icon-image" src={item.src} />
           <a className="side-bar-option">{item.name}</a>
         </div>
       ))}
